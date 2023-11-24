@@ -1,3 +1,4 @@
+import React from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -26,7 +27,7 @@ const Home: NextPage = () => {
           content="zAiBot - Zaibot is revolutionizing the way we interact with the dynamic world of cryptocurrency."
           name="description"
         />
-        <link href={logo} rel="icon" />
+        {/* <link href='/assets/logo.svg' rel="icon" /> */}
       </Head>
       <main>
         <div className="menu-container svelte-1sogyhm">
