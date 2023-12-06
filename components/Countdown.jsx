@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Buttonn from "./Button";
 const Countdown = () => {
   // Define state for countdown values
   const [hours, setHours] = useState(0);
@@ -44,9 +45,10 @@ const Countdown = () => {
 
   return (
     <>
-      <h2 className="cyan"><span id="hours">{hours}h:</span><span id="minutes"> {minutes}m : </span><span id="seconds">{seconds}s</span></h2>
-      <h4 className="banner-btn-container svelte-cadtdl"> until sale ends
-      </h4>
+      <h2 className="cyan" style={{margin: '20px'}}><span id="hours">{hours}h:</span><span id="minutes"> {minutes}m : </span><span id="seconds">{seconds}s</span></h2>
+      <h4 className="banner-btn-container svelte-cadtdl "> until sale ends</h4>
+
+      <Buttonn />
     </>
   )
 }

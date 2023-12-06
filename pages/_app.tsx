@@ -5,8 +5,7 @@ import type { AppProps } from 'next/app';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import {
   mainnet,
-  bsc,
-  goerli
+  bsc
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
@@ -14,8 +13,6 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     mainnet,
     bsc,
-    goerli,
-    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [goerli] : []),
   ],
   [publicProvider()]
 );
@@ -36,7 +33,7 @@ const wagmiConfig = createConfig({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider modalSize="compact" chains={chains}>
         <Component {...pageProps} />
       </RainbowKitProvider>
     </WagmiConfig>

@@ -1669,14 +1669,12 @@ ul {
 }
 
 .bottom.svelte-cadtdl {
-    position: absolute;
-    bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9
+    z-index: 9;
+    position: relative;
 }
 
 .banner-btn-container.svelte-cadtdl {
@@ -1772,9 +1770,6 @@ ul {
     text-align: center;
     align-items: center;
     z-index: 2;
-    position: absolute;
-    left: 0;
-    right: 0;
     padding: 20px;
     letter-spacing: .1em;
     font-weight: 100;
@@ -1784,9 +1779,9 @@ ul {
     font-size: 2.5vh;
     line-height: normal;
     width: 100%;
-    margin: auto;
     letter-spacing: 0;
-    top: 30%
+    margin-top: 150px;
+
 }
 
 h6.svelte-cadtdl {

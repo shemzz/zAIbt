@@ -382,26 +382,8 @@ const Home: NextPage = () => {
               Z<span className="cyan">AI</span>BOT
             </h1>
           </div>
-
-          <div className="bottom svelte-cadtdl">
-            <div>
-              <h4 className="banner-btn-container svelte-cadtdl">
-                {" "}
-                We accept <br />
-                ETH / BNB
-              </h4>
-            </div>
-            <div
-              className="justify-center items-center flex-col flex"
-              style={{ flexDirection: "column" }}
-            >
-              <Buttonn />
-            </div>
-          </div>
-
-          <div>
             <Countdown />
-          </div>
+
         </div>
 
         <div className="bg-map">
